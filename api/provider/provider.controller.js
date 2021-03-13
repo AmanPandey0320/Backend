@@ -102,8 +102,8 @@ module.exports = {
                 res.status(401).json({code:401, message:'can not verify you! Please sign in or sign up.'})
             }
 
-         }catch(error){
-             console.log(err);
+         }catch(err){
+            //  console.log(err);
              res.status(500).json({code:err.code, message:err.message,err:err});
          }
     },
